@@ -1,0 +1,158 @@
+ /* */
+
+
+.head{
+  display: flex;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 5px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(0px);
+  transition: all 0.5s ease;
+  opacity: 1;
+  
+}
+
+.scrolled-down  {
+  transform: translateY(-75px);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.left-section{
+  display: flex;
+  height: 60px;
+  margin-left: 25px;
+  margin-right: 25px;
+  align-items: center;
+  transition: all 0.5s;
+  color: white  ;
+}
+
+.left-section:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  color: goldenrod;
+  text-decoration: underline;
+}
+.eresh-padoru{
+  width: auto;
+  height: 100%;
+  opacity: 0.7;
+  
+}
+
+
+
+.middle-section{
+  flex-shrink: 1;
+  
+}
+
+.searchbar{
+  width: 100%;
+  border-style: none;
+  padding: 15px 15px 15px 15px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 30px rgba(161, 157, 157, 0.432);
+  transition: width 0.25s;
+  flex-shrink: 1;
+  font-family: Itim;
+  font-size: 15px;
+}
+
+
+@media (min-width: 440px) and (max-width:1700px) {
+  .searchbar{
+    width: 600px;
+    
+  }
+
+  .searchbar:focus{
+    border-style: none;
+    width: 700px;
+    outline:  none;
+  }
+
+}
+
+@media (min-width: 1700px) and (max-width:2000px) {
+  .searchbar{
+    width: 1000px;
+    
+  }
+  .searchbar:focus{
+    border-style: none;
+    width: 1100px;
+    outline:  none;
+  }
+
+}
+
+@media (min-width: 2000px) and (max-width:3000px) {
+  .searchbar{
+    width: 1300px;
+    
+  }
+
+  .searchbar:focus{
+    border-style: none;
+    width: 1400px;
+    outline:  none;
+  }
+
+
+}
+
+
+.right-section{
+  height: 60px;
+  display: flex;
+  margin-right: 20px;
+  
+  align-items: center;
+  flex-shrink: 0;
+  
+}
+
+
+
+
+
+.twitter{
+  margin-right: 10px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  
+}
+
+.twitter:hover{
+
+  cursor:pointer;
+  width: 105%;
+  height: 105%;
+  opacity: 0.8;
+}
+
+.discord{
+    
+  width: 50%;
+  height: 50%;
+  
+}
+
+.discord-tag{
+  font-weight: 500;
+  color: rgb(161, 154, 154);
+  font-size: 100%;
+  margin-left: 10px;
+}
+
+.discord-tag:hover{
+  text-decoration: underline;
+  
+}

@@ -1,0 +1,366 @@
+
+
+.logo-popup-apo{
+  text-align: center;
+  width: 180px;
+}
+
+.head-popupApo{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  font-family: Noto Serif Ahom;
+  min-width: 600px;
+  
+}
+
+.ClassApo{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+
+}
+
+.ClassApo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.Red{
+  border-color: rgb(121, 12, 12);
+  box-shadow: 0px 0px 15px 8px rgb(124, 31, 25);
+
+}
+.Black{
+  border-color: rgb(29, 26, 26);
+  box-shadow: 0px 0px 15px 8px rgb(12, 11, 11);
+}
+
+.Black:hover .avatar-picture-apo{
+  box-shadow: 0px 0px 15px 10px rgb(0, 0, 0);
+  animation: opacity-card 0.5s ease-in-out forwards;
+  transition: all 0.5s;
+}
+.Red:hover .avatar-picture-apo{
+  box-shadow: 0px 0px 15px 10px rgb(124, 31, 25);
+  animation: opacity-card 0.5s ease-in-out forwards;
+  transition: all 0.5s;
+}
+
+.NameRed{
+  font-family: Roboto;
+  color: rgb(121, 29, 16);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.NameBlack{
+  font-family: Roboto;
+  color: rgb(129, 122, 122);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+@keyframes opacity-card {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo-popup-CasterApoRed,
+.logo-popup-BerserkerApoRed,
+.logo-popup-AssassinApoRed,
+.logo-popup-RiderApoRed,
+.logo-popup-LancerApoRed,
+.logo-popup-ArcherApoRed,
+.logo-popup-SaberApoRed{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(124, 31, 25);
+  font-family: Dancing Script;
+  letter-spacing: 5px;
+  line-height: 25px;
+  margin-top: 5px;
+  
+}
+
+.BlackShadow .logo-popup-SaberApoRed{
+  color: rgb(97, 96, 96);
+}
+
+.dateApoRed{
+  color:rgb(124, 31, 25);
+  margin: 5px 15px 0px 0px;
+  font-family: roboto;
+  font-weight: 500;
+}
+
+.BlackShadow .dateApoRed{
+  color: rgb(97, 96, 96);
+}
+
+.close-apoBlack,
+.close-apo{
+  background-color: transparent;
+  font-size: 40px;
+  height: 20px;
+  line-height: 0px;
+  width: 30px;
+  
+  margin-left: 10px;
+  
+  border-style: none;
+  
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #ffffff, #c22929);
+  transition: all 0.40s ease;
+  
+}
+
+.close-apo:hover{
+  transform: scale(1.2);
+  background-image: linear-gradient(to right bottom, #f10c0c, #941c1c);
+  
+} 
+
+.close-apoBlack{
+  background-image: linear-gradient(to right bottom, #ffffff, #000000);
+
+}
+
+.close-apoBlack:hover{
+  transform: scale(1.2);
+  
+
+}
+.titleApoRed{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-width:3px ;
+  border-top-style: solid;
+  border-color: rgb(121, 12, 12);
+  align-items: center;
+}
+
+.titleApoBlack{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-width:3px ;
+  border-top-style: solid;
+  border-color: rgb(0, 0, 0);
+  align-items: center;
+}
+
+
+.fateApoStoryAssassin,
+.fateApoStoryBerserker,
+.fateApoStoryCaster,
+.fateApoStoryRider,
+.fateApoStoryLancer,
+.fateApoStoryArcher,
+.fateApoStorySaber,
+.fateApoStory {
+  pointer-events:all;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 20px;
+  right: 25px;
+  bottom: 0px;
+  height: fit-content;
+  background-image: url("FateApo-popup/StoryBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(124, 31, 25, 0.586);
+  transition: animation 0.5s;
+  opacity: 0;
+  min-width: 600px;
+  max-width: 1980px;
+  padding-bottom: 100px;
+
+  overflow-y: scroll;
+}
+
+.BlackShadow{
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.586);
+
+}
+
+.BlackBerserker{
+  object-position:80%
+  
+}
+
+.BlackArcher{
+  object-position: 80%;
+}
+
+.fateApoStoryAssassin{
+  background-image: url("FateApo-popup/AssassinRedBackground.jpg");
+}
+.BlackAssassinWallpaper{
+  background-image: url("FateApo-popup/AssassinBlackBackground.jpg");
+}
+
+
+.fateApoStoryBerserker{
+  background-image: url("FateApo-popup/BerserkerRedBackground.jpg");
+}
+.BlackBerserkerWallpaper{
+  background-image: url("FateApo-popup/BerserkerBlackBackground.jpg");
+}
+
+
+.fateApoStoryCaster{
+  background-image: url("FateApo-popup/CasterRedBackground.jpg");
+}
+.BlackCasterWallpaper{
+  background-image: url("FateApo-popup/CasterBlackBackground.jpg");
+}
+
+
+.fateApoStoryRider{
+  background-image: url("FateApo-popup/RiderRedBackground.jpg");
+}
+.BlackRiderWallpaper{
+  background-image: url("FateApo-popup/RiderBlackBackground.jpg");
+}
+
+
+.fateApoStoryLancer{
+  background-image: url("FateApo-popup/LancerRedBackground.jpg");
+}
+.BlackLancerWallpaper{
+  background-image: url("FateApo-popup/LancerBlackBackground.jpg");
+}
+
+
+.fateApoStoryArcher{
+  background-image: url("FateApo-popup/ArcherRedBackground.jpg");
+}
+.BlackArcherWallpaper{
+  background-image: url("FateApo-popup/ArcherBlackBackground.jpg");
+}
+
+
+.fateApoStorySaber{
+  background-image: url("FateApo-popup/SaberRedBackground.jpg");
+}
+.BlackSaberWallpaper{
+  background-image: url("FateApo-popup/SaberBlackBackground.jpg");
+}
+
+
+.transitionApo-pop{
+  
+  animation: spawn-info-card 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+}
+
+.transitionApo-remove-pop{
+  animation: dispawn-info-card 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+  
+}
+
+
+
+
+
+.divVS{
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+  
+}
+
+.VS:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+.VS{
+  border: solid 6px goldenrod;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 100px;
+  font-family: Permanent Marker;
+  padding: 0px 15px 0px 15px;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("AllHidden/JeanneHidden/Light.gif");
+  background-size: auto;
+  transition: all 0.5s;
+}
+
+.transitionApoBlack-pop{
+  
+  animation: spawn-info-cardApoBlack 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+}
+
+@keyframes spawn-info-cardApoBlack {
+  from {
+    top: 4050px;
+    opacity: 0;
+  }
+  to {
+    top: 4100px;
+    opacity: 1;
+  }
+}
+
+.transitionApoBlack-remove-pop{
+  animation: dispawn-info-cardApoBlack 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+  
+}
+
+
+
+@keyframes dispawn-info-cardApoBlack {
+  from {
+    top: 4100px;
+    opacity: 1;
+  }
+  to {
+    top: 4050px;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

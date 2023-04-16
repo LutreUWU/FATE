@@ -1,0 +1,200 @@
+.video-edit{
+  display: block;
+  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+  z-index: 2;
+}
+
+.HiddenMordredSecret{
+  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+  display: none;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+.transitionSecret{
+  animation: opacity 8.5s ease-in-out
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Specialclose-apo{
+  background-color: transparent;
+}
+
+.Specialhead-popupApo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 15px;
+  
+}
+.CloseSecret{
+  position: fixed;
+  font-size: 50px;
+  transform: rotate(180deg);
+  animation: Arrow-move 1s  infinite;
+  margin-top: 0px;
+ 
+  top: 0px;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("MordredHidden/fire-flames.gif");
+  background-position: center
+}
+
+@keyframes Arrow-move {
+  0% {
+    margin-left: 15px;
+
+  }
+
+  50% {
+    margin-left: 20px;
+  }
+
+  100% {
+    margin-left: 15px;
+  }
+}
+
+.Speciallogo-popup-SaberApoRed{
+  margin-top: -15px;
+  font-family: Permanent Marker;
+  font-size: 65px;
+  letter-spacing: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("MordredHidden/fire-flames.gif");
+  background-position: center
+  
+  
+}
+
+.shadowMordred{
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 0px transparent, 0 0 0.5em rgb(255, 153, 0), 0 0 0.2em transparent;
+}
+
+.SpecialdateApoRed{
+  font-family: Permanent Marker;
+  margin-top: -30px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("MordredHidden/fire-flames.gif");
+  background-position: bottom;}
+
+  .MordredBackgroundSound{
+    position: fixed;
+    bottom: -100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(144, 133, 39,0.5);   
+    height: 50px;
+    border-radius: 20px 8px 0px 0px;
+    width: 480px;
+    border-style:solid;
+    background-image: linear-gradient(to top right, rgb(49, 47, 47), black);
+    background-position:center;
+    border-width: 2px;
+    border-color: orangered;
+    animation: bottom 1s ease-in-out
+  }
+
+  .textMordred{
+    text-align: center;
+    font-family: Permanent Marker;
+    font-size: 15px;
+    background-clip:text ;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to bottom right, orange, red);
+  }
+
+  .SoundMordred{
+    font-size: 13px;
+  }
+
+  .AllDivMordredStory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .MordredStoryDiv{
+    
+      height: 100%;
+      margin-top: 50px;
+      margin-left: 130px;
+      color: white;
+      width: 20%;
+      text-align: center;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      box-shadow:  2px 5px 20px 8px  rgba(218, 132, 21, 0.507);
+      background-color: rgba(209, 120, 19, 0.11);
+      text-shadow: 0 0 10px rgba(105, 105, 102, 0.836);
+      animation: div 5s alternate-reverse ease-in-out infinite;
+    
+    }
+  
+    .MordredStory{
+      margin: 0px 10px 0px 10px;
+      font-family: Itim, cursive;
+      
+    }
+    
+    .MordredTwo{
+      margin-top: 10px;
+      padding-bottom: 5px;
+    }
+    
+    .RightMordred{
+      margin-left: auto;
+      margin-right: 5%;
+      margin-top: 150px;
+    }
+
+    .MordredImage{
+      width: 95%;
+      margin: 0;
+      border-radius: 15px;
+    }
+    .MordredTitle{
+      font-family: Permanent Marker;
+      font-size: 20px;
+      color: rgb(247, 122, 5);
+    }
+    
+    
+  
+    
+    .MordredAndMaster{
+      background-image: url(MordredHidden/Mordred&Master.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 20vh;
+      margin-right: 5%;
+      
+    }

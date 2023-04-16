@@ -1,0 +1,297 @@
+* {
+    border: 0;
+    outline: none;
+    margin: 0;
+}
+
+.song-all{
+    position:fixed;
+    bottom: 0px;
+    right: 17px;
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 99;
+    
+}
+.soundbar-fixed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(144, 133, 39,0.5);   
+    height: 50px;
+    border-radius: 20px 8px 0px 0px;
+    font-family: Itim ;
+    width: 480px;
+    height: 40px;
+    border-style:solid;
+    border-color: goldenrod;
+    border-width: 2px;
+    box-shadow: 0px 0px 15px 2px rgb(196, 132, 13);
+    z-index: 99;
+}
+
+.song-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin-left: 5px;
+    
+}
+
+.song-text{
+    font-size: 17px;
+    color: goldenrod;
+    font-style: italic;
+    
+}
+
+.song-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.name-song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 3px;
+    
+}
+
+
+.disk-logo{
+    width: 30px;
+}
+
+.disk-logo-fixed{
+    width: 32px;
+    position: absolute;
+    left: 110px;
+}
+
+
+.volume-option {
+   
+
+    margin-right: 5px;
+    border-radius: 5px;
+    
+  }
+
+.volume-option{
+    padding: 10px;
+    background-color: none;
+    border-radius: 5px 25px 25px 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.volume-option input {
+    z-index: 99;
+    background-color: transparent;
+    position: absolute;
+    appearance: none;
+    width:150px;
+}
+
+.volume-option input::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(144, 133, 39);
+    border-radius: 50%;
+    border:1px solid goldenrod;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.volume-option progress{
+    appearance: none;
+    overflow:hidden;  
+    height: 20px;
+    border-radius: 10px;
+    width:150px;
+
+}
+
+.volume-option progress::-webkit-progress-bar{
+    background-color: #f0f0f0;
+}
+
+.volume-option progress::-webkit-progress-value{
+    background-color: goldenrod;
+}
+
+.sliderValue{
+    color: goldenrod;
+    font-family: Roboto;
+    font-weight: 500;
+    position:absolute;
+    bottom: 12px;
+    right: 20px;
+    transition: bottom 0.5s ease-in-out;
+}
+
+
+ 
+
+.song-list-close{
+
+    z-index: 15;
+    height: 0px;
+    transition: height 0.5s ease-in-out;
+
+}
+
+
+.song{
+    display: grid;
+    grid-template-columns: 105px 185px 1fr;
+    height: 40px;
+    background-repeat: no-repeat;
+
+}
+
+.none{
+    display: none;
+}
+
+.rotate-disk{
+    animation: rotate 1.5s ease-in-out infinite;
+
+}
+
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+.N1{
+    background-image: url("MusicBackground/JackTheRipper.jpg");
+    animation: opacity 1s ease-in;
+    
+}
+
+.N2{
+    background-image: url("MusicBackground/AshLisa.jpg");
+    animation: opacity 1s ease-in;
+
+}
+
+.N3{
+    background-image: url("MusicBackground/Eresh.jpg");
+    font-size: 13px;
+    animation: opacity 1s ease-in;
+
+}
+
+.sliderValue{
+    font-size: 15px;
+}
+.N4{
+    background-image: url("MusicBackground/Nero.jpg");
+    animation: opacity 1s ease-in;
+}
+
+.N5{
+    background-image: url("MusicBackground/ArtoriaTable.jpg");
+    font-size: 13px;
+    animation: opacity 1s ease-in;
+}
+
+.N6{
+    background-image: url("MusicBackground/ZeroServants.jpg");
+    animation: opacity 1s ease-in;
+}
+
+
+
+.N7{
+    background-image: url("MusicBackground/Prover.jpg");
+    animation: opacity 1s ease-in;
+}
+
+.N8{
+    background-image: url("MusicBackground/Emiya.jpg");
+    animation: opacity 1s ease-in;
+}
+
+@keyframes opacity {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+
+.button-play-place{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.play-button{
+    width: 25px;
+    
+}
+
+.Name-menu{
+    display: flex;
+    align-items: center;
+}
+
+.song-play{
+    
+    font-family: Itim;
+    color: wheat;
+    display: inline-block;
+}
+
+.now{
+    color:goldenrod;
+    
+    
+    
+}
+.logo-music{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.music-origin{
+    width: 80px;
+}
+
+.N6logo{
+    width: 50px;
+}
+
+.N8logo{
+    width: 50px;
+}
+.nero{
+    width: 80px;
+}
+
+.bloodSoundEdit{
+    width: 70px;
+    position: absolute;
+    right: 165px;
+    transform: rotate(35deg);
+}

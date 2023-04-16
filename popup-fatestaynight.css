@@ -1,0 +1,87 @@
+
+
+.head-popupUBW{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  font-family: Noto Serif Ahom;
+  min-width: 600px;
+  
+}
+.fateUBWStoryAssassin,
+.fateUBWStoryBerserker,
+.fateUBWStoryCaster,
+.fateUBWStoryRider,
+.fateUBWStoryLancer,
+.fateUBWStoryArcher,
+.fateUBWStorySaber,
+.fateUBWStory {
+  pointer-events:all;
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  height: fit-content;
+  z-index: 10;
+  left: 20px;
+  right: 25px;
+  background-image: url("FateUBW-popup/FateUBWBackground.jpg");
+  background-size: cover;
+  
+ 
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(56, 37, 13, 0.596);
+  transition: animation 0.5s;
+  opacity: 0;
+  min-width: 600px;
+  max-width: 1980px;
+  padding-bottom: 200px;
+}
+
+.fateUBWStoryAssassin{
+  background-image: url("FateUBW-popup/AssassinUBWBackground.jpg");
+}
+
+.fateUBWStoryBerserker{
+  background-image: url("FateUBW-popup/BerserkerUBWBackground.jpg");
+}
+
+.fateUBWStoryCaster{
+  background-image: url("FateUBW-popup/CasterUBWBackground.jpg");
+
+}
+
+.fateUBWStoryRider{
+  background-image: url("FateUBW-popup/RiderUBWBackground.jpg");
+
+}
+
+
+.fateUBWStoryLancer{
+  background-image: url("FateUBW-popup/LancerUBWBackground.jpg");
+}
+
+.fateUBWStoryArcher{
+  background-image: url("FateUBW-popup/ArcherUBWBackground.jpg");
+
+}
+
+.fateUBWStorySaber{
+  background-image: url("FateUBW-popup/SaberUBWBackground.jpg");
+}
+
+.transitionUBW-pop{
+  
+  animation: spawn-info-card 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+}
+
+
+
+.transitionUBW-remove-pop{
+  animation: dispawn-info-card 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+  
+}
+
+

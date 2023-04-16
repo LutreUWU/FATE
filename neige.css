@@ -1,0 +1,33 @@
+.snowflake {
+  position: fixed;
+  top: -50px;
+  animation: snowfall 10s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes snowfall {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes wind {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(150px);
+  }
+}
+
+
+.snowflake{
+  filter: brightness(50%);
+}
+
+
+
+

@@ -1,0 +1,277 @@
+.video-edit{
+  display: block;
+  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+  z-index: 2;
+}
+
+.HiddenJeanneSecret{
+  position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+  display: none;
+  z-index: 3;
+  overflow-y: scroll;
+
+}
+
+.transitionSecret{
+  animation: opacity 8.5s ease-in-out
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Specialclose-apo{
+  background-color: transparent;
+}
+
+.Specialhead-popupApoJeanne{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5px;
+  
+}
+.CloseSecretJeanneHidden{
+  position: absolute;
+  font-size: 50px;
+  transform: rotate(180deg);
+  animation: Arrow-move 1s  infinite;
+  margin-top: 0px;
+  top: 0px;
+  left: 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("JeanneHidden/Light.gif");
+  background-position: center
+}
+
+@keyframes Arrow-move {
+  0% {
+    margin-left: 15px;
+
+  }
+
+  50% {
+    margin-left: 20px;
+  }
+
+  100% {
+    margin-left: 15px;
+  }
+}
+
+.Speciallogo-popup-JeanneHiddenApo{
+  margin-top: -15px;
+  font-family: Permanent Marker;
+  font-size: 65px;
+  letter-spacing: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("JeanneHidden/Light.gif");
+  background-position: center;
+}
+
+.shadowJeanne{
+  
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 0px transparent, 0 0 1em rgb(214, 194, 14), 0 0 0.2em transparent;
+}
+
+.O{
+  letter-spacing: 25px;
+}
+
+
+.SpecialdateApoJeanneHidden{
+  font-family: Permanent Marker;
+  margin-top: -30px;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("JeanneHidden/Light.gif");
+  background-position: bottom;
+  font-size: 30px;
+ 
+}
+
+
+
+
+
+.gridJeanne{
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.JeanneStory{
+  margin: 0px 10px 0px 10px;
+  font-family: Itim, cursive;
+  
+}
+
+
+
+
+.AllDivJeanneStoryLeft{
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.JeanneStoryDivLeft{ 
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow:  2px 5px 20px 8px  rgba(214, 210, 210, 0.507);
+    background-color: rgba(134, 127, 127, 0.11);
+    text-shadow: 0 0 10px rgba(236, 236, 231, 0.836);
+    animation: div 5s alternate-reverse ease-in-out infinite;
+  
+  }
+.JeanneTitleLeft{
+  font-family: Permanent Marker;
+  font-size: 20px;
+  color: rgb(212, 212, 204);
+}
+.JeanneOneLeft,
+.JeanneTwoLeft{
+  color: rgb(156, 155, 149);
+}
+
+
+                .AllDivJeanneStoryIRL{
+                  margin-left: 5%;
+                  margin-right: 5%;
+                  margin-top: -1%;
+                }
+
+                .JeanneStoryDivIRL{
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    border-radius: 15px;
+                    
+                    background-color: rgba(146, 112, 19, 0.137);
+                    text-shadow: 0 0 10px rgba(105, 105, 102, 0.836);
+                    animation: div 5s alternate-reverse ease-in-out infinite;
+
+                  }
+                .JeanneTitleIRL{
+                  font-family: Permanent Marker;
+                  font-size: 20px;
+                  color: rgb(152, 161, 21);
+                }
+
+                .JeanneOne,
+                .JeanneTwo{
+                  color: gold;
+                }
+
+                .DownIRL{
+                  display: flex;
+                  justify-content: space-around;
+                  background-color: transparent;
+
+                }
+                .JeanneAlterImage,
+                .JeanneImage{
+                  background-position: center;
+                  background-size:cover;
+                  background-repeat: no-repeat;
+                  overflow: hidden;
+                  height: 20vh;
+                  width: 50%;
+                  border-radius: 15px;
+                  filter:brightness(50%)
+                }
+      
+                .JeanneImage{
+                  background-image: url("JeanneHidden/JeanneGIF.gif");
+                  box-shadow:  2px 5px 20px 8px  rgba(219, 218, 213, 0.507);
+                  margin-top: 20%;
+                  margin-right: 2%;
+                }
+              
+                .JeanneAlterImage{
+                  background-image: url("JeanneHidden/JalterGIF.gif");
+                  box-shadow:  2px 5px 20px 8px  rgba(151, 89, 8, 0.507);
+                  margin-top: 40%;
+                  margin-left: 2%;
+                }
+
+
+.AllDivJeanneStoryRight{
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.JeanneStoryDivRight{ 
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow:  2px 5px 20px 8px  rgba(141, 83, 16, 0.507);
+    background-color: rgba(0, 0, 0, 0.11);
+    text-shadow: 0 0 10px rgba(105, 105, 102, 0.836);
+    animation: div 5s alternate-reverse ease-in-out infinite;
+  
+  }
+.JeanneTitleRight{
+  font-family: Permanent Marker;
+  font-size: 20px;
+  color: rgb(13, 14, 13);
+}
+
+
+.JeanneOneRight,
+.JeanneTwoRight,
+.JeanneThreeRight{
+  color: orangered;
+}
+
+.JeanneThreeRight,
+.JeanneTwoRight,
+.JeanneTwoLeft,
+.JeanneTwo{
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+
+.DownLeft{
+  margin-top: 20%;
+}
+
+
+
+.DownRight{
+  margin-top: 20%;
+}
+
+  
+  
+  
+  
+  
+ 

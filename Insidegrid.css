@@ -1,0 +1,91 @@
+
+
+.avatar-picture-apo,
+.avatar-picture{
+  width: 170px;
+  height: 300px;
+  
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  filter:brightness(65%);
+  
+
+}
+
+.Class:hover{
+  transform: scale(1.2);
+  cursor:pointer
+}
+
+
+
+.Class{
+  border-style: solid;
+  border-width: 2px;
+  border-color: gold;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 15px 8px rgb(95, 63, 5);
+
+}
+
+  
+.Class:hover .avatar-picture {
+  box-shadow: 0px 0px 15px 8px rgb(196, 132, 13);
+  animation: opacity-card 0.5s ease-in-out forwards;
+  transition: all 0.5s;
+  
+}
+@keyframes opacity-card {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-animation{
+  animation: spawn-card 0.5s ease-in;
+}
+
+@keyframes spawn-card {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.avatar{
+  height: 300px;
+  
+  
+}
+.title{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-width:3px ;
+  border-top-style: solid;
+  border-color: goldenrod;
+  align-items: center;
+}
+
+.icon{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  width: 25px;
+}
+
+.Name{
+  color: wheat;
+  font-size: 15px;
+}

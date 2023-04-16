@@ -1,0 +1,647 @@
+
+.video-editTableRound{
+  display: block;
+  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+  z-index: 2;
+}
+
+.HiddenTableRoundSecret{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  overflow-y: scroll;
+  
+ 
+
+}
+
+
+.SpecialcloseTableRound{
+  background-color: transparent;
+  
+}
+
+
+/*Pour le head popup*/
+        .Specialhead-popupTableRound{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 5px;
+          margin-right: 15px;
+          
+        }
+        .CloseSecret{
+          position: fixed;
+          font-size: 50px;
+          transform: rotate(180deg);
+          animation: Arrow-move 1s  infinite;
+          margin-top: 0px;
+          top: 0px;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          background-image: url("TableRoundHidden/wood.jpg");
+          background-position: center
+        }
+
+        @keyframes Arrow-move {
+          0% {
+            margin-left: 15px;
+
+          }
+
+          50% {
+            margin-left: 20px;
+          }
+
+          100% {
+            margin-left: 15px;
+          }
+        }
+
+        .Speciallogo-popupTableRound{
+          margin-top: -15px;
+          font-family: Permanent Marker;
+          font-size: 50px;
+          letter-spacing: 10px;
+          color: rgb(187, 179, 179);
+          animation: focus 3s alternate-reverse linear infinite;
+          
+        }
+
+        @keyframes focus {
+          0%{
+            transform: scale(1);
+          }
+
+          100%{
+            transform: scale(1.02);
+            color:rgb(90, 87, 87)
+          }
+        }
+
+        .shadowTableRound{
+          letter-spacing: 0px;
+          animation: shadow 3s alternate-reverse linear infinite;
+
+        }
+
+        @keyframes shadow {
+          0%{
+            text-shadow: 0px 0px 0px transparent, 0 0 0.5em rgb(168, 168, 165), 0 0 0.2em transparent;
+
+          }
+
+          100%{
+            text-shadow: 0px 0px 0px transparent, 0 0 20px rgb(28, 29, 28), 0 0 0.2em transparent;
+
+          }
+        }
+
+        .O{
+          letter-spacing: 30px;
+        }
+
+        .SpecialdateTableRound{
+          font-family: Permanent Marker;
+          font-size: 30px;
+          margin-top: -30px;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          background-image: url("TableRoundHidden/wood.jpg");
+          background-position: bottom;
+        }
+/*Pour le head popup*/
+
+
+/*Pour la barre de son fixe*/
+          .textTableRound{
+            font-family: Permanent Marker;
+            margin-top: 14px;
+            font-size: 15px;
+            background-clip:text ;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(34, 33, 33))
+          }
+
+          .TableRoundBackgroundSound{
+            position: fixed;
+            bottom: -100px;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(144, 133, 39,0.5);   
+            height: 50px;
+            border-radius: 20px 8px 0px 0px;
+            width: 550px;
+            background-image: linear-gradient(to top right, rgba(233, 233, 233, 0.6),rgba(0, 0, 0, 0.6)  );
+            background-position:center;
+            box-shadow: 0px 0px 15px 5px rgba(218, 221, 218, 0.6);
+
+          }
+
+          .TableRoundVolume progress,
+          .TableRoundVolume input{
+            width: 100px;
+            margin-left: -80px;
+          }
+
+          .TableRoundVolume progress::-webkit-progress-value{
+            background-color: rgb(117, 121, 117);
+          }  
+
+          .TableRoundVolume input::-webkit-slider-thumb {
+            background-color: rgb(47, 49, 47);
+            border:1px solid rgb(194, 201, 194);
+          }
+          .TableRoundVolumeValue{
+            font-family: Permanent Marker;
+            color: rgb(122, 122, 34);
+            bottom: 15px;
+            right: 55px;
+            
+          }
+/*Fin Pour la barre de son fixe*/      
+
+
+
+
+.TableroundWallpaper{
+  background-image: url("TableRoundHidden/Wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 120vh;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 15px;
+  border:solid 2px rgb(160, 155, 155);
+  animation: divTable 5s alternate-reverse ease-in-out infinite;
+  
+}
+
+@keyframes divTable{
+  0%{
+    transform:  translateY(0);
+
+  }
+  100%{
+    
+    transform:  translateY(20px);
+  }
+}
+
+
+/*Début indicateur pour chaque perso*/
+  /*Pour le truc gris qui tourne*/
+.indicator{
+ width: 100%;
+ animation: spin 5s infinite ease-in-out;
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Logo{
+  width: 4%;
+  top:0px;
+  position: relative;
+  
+ } 
+
+ .spin{
+  width: 100%;
+  top:0px;
+  position: relative;
+  transition: all 0.5s;
+ } 
+
+.spin:hover{
+  transform: scale(1.2);
+}
+
+.backgroundindicator{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  
+}
+
+ 
+.indicator{
+  flex:1
+}
+ 
+ /*Pour la position du truc gris pour chaque perso*/
+ .indicator-servant-one{
+  top: 12%;
+  left: 9%;
+ }
+
+ .indicator-servant-two{
+  
+  top: 19%;
+  left: 21%;
+ } 
+
+ .indicator-servant-three{
+  
+  top: -12%;
+  left: 34%;
+ } 
+
+ .indicator-servant-four{
+  
+  top: -2%;
+  left: 47.5%;
+ } 
+
+ .indicator-servant-five{
+  
+  top: -27.5%;
+  left:60.9%;
+ } 
+
+ .indicator-servant-six{
+  
+  top: -37%;
+  left: 71%;
+ } 
+
+ .indicator-servant-seven{
+  
+  top: -46%;
+  left: 88.3%;
+ } 
+
+ /*Pour l'apparition de la div*/
+      /*Animation du trait*/
+        .trait{
+          position: absolute;
+          border-top: solid 2px whitesmoke;
+          transition: opacity 0.5s;
+          opacity:0;
+        }
+      /*Pour la div texte*/  
+        .text-servant{
+          
+          position: absolute;
+          overflow: hidden;
+          opacity: 0;
+          pointer-events: none;
+          height: 100%;
+          width: 900%;
+          
+          transition: all 1s;
+          text-align: center;
+          
+          background-color: rgba(233, 233, 233, 0.6);
+          border: solid 2px whitesmoke;
+          border-radius: 15px;
+          font-family: Itim;
+          
+          transform-origin:center;
+          z-index: -5;
+        }
+
+      /*Pour gérer la position des divs textes de chaque persos*/  
+
+        .Lancelot,
+        .Gauvain{
+          
+          bottom: 50%;
+          left: 128%;
+          
+        }
+
+        .MordredText{
+          bottom: -50%;
+          left: 130%;
+        }
+
+        .ArtoriaText{
+          bottom: 145%;
+          left: -380%;
+        }
+
+        .BedivereText{
+          top:-80%;
+          right: 120%;
+        }
+
+        .TristanText{
+          top:50%;
+          right: 120%;
+          
+        }
+
+        .AgravainText{
+          top:-80%;
+          right: 120%;
+          
+        }
+
+       /*Pour faire apparraitre et disparaitre la div texte*/  
+        .text-pop{
+          opacity: 1;
+          animation:spawn 0.5s;
+          animation-fill-mode: forwards;
+        }
+        .text-depop{ 
+          animation:spawn-dispawn 0.5s;
+          animation-fill-mode: forwards;
+        }
+
+        .Logo:hover .textTable{
+          opacity: 0;
+          display: block;
+          animation: textSpawn 1s;
+          animation-delay: 1s;
+          animation-fill-mode: forwards ;
+        }
+        
+        @keyframes textSpawn{ 
+          from{
+            
+            opacity: 0;
+          }
+        
+          to{
+            
+            opacity: 1;
+          }
+        }
+
+       /*Pour faire apparraitre et disparaitre la div Artoria*/  
+        .text-popArtoria{
+          opacity: 1;
+          animation:spawn-Artoria 0.5s;
+          animation-fill-mode: forwards;
+        }
+        .text-depopArtoria{
+          
+          animation:spawn-dispawn-Artoria 0.5s;
+          animation-fill-mode: forwards;
+          
+        }
+        
+       
+
+        @keyframes spawn-dispawn{
+          from{
+            display: block;
+            transform: scaleY(1);
+            width: 900%;
+            z-index: 100;
+          }
+
+          to{
+            transform: scaleY(0);
+            display: none;
+            width: 0%;
+            z-index: -10;
+          }
+        }
+
+        @keyframes spawn{
+          from{
+            display: none;
+            transform: scaleY(0);
+            z-index: -10;
+            width: 0%;
+          }
+
+          to{
+            display: block;
+            transform: scaleY(1);
+            width: 900%;
+            z-index: 10;
+          }
+        }
+
+        @keyframes spawn-dispawn-Artoria{
+          from{
+            transform: scaleX(1);
+
+            width: 900%;
+            z-index: 100;
+          }
+
+          to{
+            left:48.5%;
+            transform: scaleX(0);
+            z-index: -10;
+            width: 0%
+          }
+        }
+
+        
+
+        @keyframes spawn-Artoria{
+          from{
+            left:48.5%;
+            transform: scaleX(0);
+            
+            width: 0%;
+          }
+
+          to{
+            transform: scaleX(1);
+            z-index: 10;
+            width: 900%
+          }
+        }
+
+/*Placement des traits pour chaques persos*/
+      .traitGauvain{
+        transform:rotate(145deg);
+        top: 10%;
+        left: 80%;
+        width: 55%;
+      }
+
+      .traitMordred{
+        transform:rotate(220deg);
+        top: 80%;
+        left: 85%;
+        width: 55%;
+      }
+
+      .traitLancelot{
+        transform:rotate(145deg);
+        top: 10%;
+        left: 80%;
+        width: 55%;
+      }
+
+      .traitArtoria{
+        transform:rotate(90deg);
+        top: -20%;
+        left: 25%;
+        width: 55%;
+      }
+
+      .traitBedivere{
+        transform:rotate(45deg);
+        top: -5%;
+        left: -30%;
+        width: 55%;
+      }
+
+      .traitTristan{
+        transform:rotate(315deg);
+        top: 90%;
+        left: -30%;
+        width: 55%;
+      }
+
+      .traitAgravain{
+        transform:rotate(45deg);
+        top: -5%;
+        left: -30%;
+        width: 55%;
+      }
+
+/*Pour faire le traît les traits blancs*/  
+
+.indicator-servant-one:hover .traitGauvain{
+  opacity: 1;
+  animation:trait-topRight 0.5s ;
+  animation-fill-mode: forwards;
+}
+
+.indicator-servant-two:hover .traitMordred{
+  opacity: 1;
+  animation:trait-botRight 0.5s ;
+  animation-fill-mode: forwards;
+  
+}
+
+.indicator-servant-three:hover .traitLancelot{
+  opacity: 1;
+  animation:trait-topRight 0.5s ;
+  animation-fill-mode: forwards;
+  
+}
+
+.indicator-servant-four:hover .traitArtoria{
+  opacity: 1;
+  animation:trait-topCenter 0.5s ;
+  animation-fill-mode: forwards;
+ 
+}
+
+.indicator-servant-five:hover .traitBedivere{
+  opacity: 1;
+  animation:trait-topLeft 0.5s ;
+  animation-fill-mode: forwards;
+ 
+}
+
+.indicator-servant-six:hover .traitTristan{
+  opacity: 1;
+  animation:trait-botLeft 0.5s ;
+  animation-fill-mode: forwards;
+ 
+}
+
+.indicator-servant-seven:hover .traitAgravain{
+  opacity: 1;
+  animation:trait-topLeft 0.5s ;
+  animation-fill-mode: forwards;
+ 
+}
+@keyframes trait-botRight{
+  from{
+    width: 0%;
+    top: 65%;
+    left: 85%;
+  }
+
+  to{
+    top: 80%;
+    left: 85%;
+    width: 55%;
+  }
+}
+
+@keyframes trait-botLeft{
+  from{
+    width: 0%;
+    top: 75%;
+    left: 15%;
+  }
+
+  to{
+    top: 90%;
+  left: -30%;
+    width: 55%;
+  }
+}
+
+@keyframes trait-topRight{
+  from{
+    width: 0%;
+    top: 21%;
+    left: 80%;
+  }
+
+  to{
+    top: 10%;
+    left: 80%;
+    width: 55%;
+  }
+}
+
+@keyframes trait-topLeft{
+  from{
+    width: 0%;
+    top: 15%;
+    left: 15%;
+  }
+
+  to{
+    top: -5%;
+    left: -30%;
+    width: 55%;
+  }
+}
+
+@keyframes trait-topCenter{
+  from{
+    width: 0%;
+    top: 5%;
+    left: 50%;
+  }
+
+  to{
+    top: -20%;
+    left: 25%;
+    width: 55%;
+  }
+}
+
+
+
+
+
+
+
+
+

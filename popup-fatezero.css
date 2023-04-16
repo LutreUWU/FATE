@@ -1,0 +1,213 @@
+.head-popup{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  font-family: Noto Serif Ahom;
+  min-width: 600px;
+}
+
+.close{
+  background-color: transparent;
+  font-size: 40px;
+  height: 20px;
+  line-height: 0px;
+  width: 30px;
+  
+  margin-left: 10px;
+  
+  border-style: none;
+  
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #ffffff, #ffd000);
+  transition: all 0.40s ease;
+  
+}
+
+.close:hover{
+  transform: scale(1.2);
+  background-image: linear-gradient(to right bottom, #f10c0c, #ffd000);
+  
+} 
+
+.logo-popup{
+  text-align: center;
+  width: 100px;
+}
+.logo-popup-Caster,
+.logo-popup-Berserker,
+.logo-popup-Assassin,
+.logo-popup-Rider,
+.logo-popup-Lancer,
+.logo-popup-Archer,
+.logo-popup-Saber{
+  text-align: center;
+  width: 150px;
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 5px;
+}
+
+.date{
+  color:rgb(235, 160, 23);
+  margin: 5px 15px 0px 0px;
+  font-family: roboto;
+  font-weight: 500;
+}
+
+.ZeroTrailer{
+  height: 100%;
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  filter:brightness(65%);
+  border: solid 2px;
+  border-color: goldenrod;
+}
+
+@keyframes translate{
+  0% {
+    transform:translateY(0px)
+  }
+
+  100% {
+    transform:translateY(20px);
+    filter:brightness(90%);
+  }
+
+
+}
+
+
+
+
+
+
+
+.fateZeroStoryCaster,
+.fateZeroStoryBerserker,
+.fateZeroStoryAssassin,
+.fateZeroStoryRider,
+.fateZeroStoryLancer,
+.fateZeroStoryArcher,
+.fateZeroStorySaber,
+.fateZeroStory {
+  pointer-events:all;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top:-200px;
+  height: fit-content;
+  background-image: url("FateZeroImage-popup/StoryBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(56, 37, 13, 0.596);
+  transition: animation 0.5s;
+  opacity: 0;
+  min-width: 600px;
+  max-width: 1980px;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  
+  
+}
+
+
+div::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.fateZeroStorySaber{
+  background-image: url("FateZeroImage-popup/SaberBackground.jpg");
+
+}
+
+.fateZeroStoryArcher{
+  background-image: url("FateZeroImage-popup/ArcherBackground.jpg");
+
+}
+
+.fateZeroStoryLancer{
+  background-image: url("FateZeroImage-popup/LancerBackground.jpg");
+
+}
+
+.fateZeroStoryRider{
+  background-image: url("FateZeroImage-popup/RiderBackground.jpeg");
+
+}
+
+.fateZeroStoryCaster{
+  background-image: url("FateZeroImage-popup/CasterBackground.jpg");
+
+}
+
+.fateZeroStoryBerserker{
+  background-image: url("FateZeroImage-popup/BerserkerBackground.jpg");
+}
+
+.fateZeroStoryAssassin{
+  background-image: url("FateZeroImage-popup/AssassinBackground.jpeg");
+
+}
+
+
+
+
+
+  
+  
+
+.transition-pop{
+  
+  animation: spawn-info-card 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+}
+
+@keyframes spawn-info-card {
+  from {
+    top: -50px;
+    opacity: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  to {
+    margin-left: 10%;
+    margin-right: 10%;
+    top:80px;
+    
+    opacity: 1;
+  }
+}
+
+.transition-remove-pop{
+  animation: dispawn-info-card 0.5s ease-in-out forwards;
+  transition: animation 0.5s;
+  
+}
+
+
+
+@keyframes dispawn-info-card {
+  from {
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 80px;
+    opacity: 1;
+  }
+  to {
+    margin-left: 10%;
+    margin-right: 10%;
+    top: -50px;
+    opacity: 0;
+  }
+}

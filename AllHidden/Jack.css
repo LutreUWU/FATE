@@ -1,0 +1,328 @@
+.video-edit{
+  display: block;
+  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+  z-index: 2;
+}
+
+/*Pour la fog quand on lance la musique de Jack*/
+.fognone{
+  display: none;
+}
+
+.fog-container {
+  position: fixed;
+  
+  width: 100%;
+  height: 100%;
+  
+  pointer-events: none;
+  animation: opacity 5s ease-in-out;
+  display:block;
+  z-index: 30;
+  
+}
+
+.fog-container-disappearAnimation{
+  animation: opacityRemove 4s ease-in-out;
+  position: fixed;
+  top: 0px;
+  z-index: 30;
+}
+
+.foggrid{
+  position:absolute;
+  top:0px;
+  right: 0px;
+  left:0px
+  
+}
+@keyframes opacity {
+  from {
+    filter:blur(0);
+    filter:opacity(0)
+  }
+  to {
+    filter:blur(1px);
+    filter:opacity(1)
+  }
+}
+
+@keyframes opacityRemove {
+  from {
+    opacity : 1;
+    
+  }
+  to {
+    opacity : 0;
+    
+    
+  }
+
+
+}
+
+.blur{
+  filter: blur(2px);
+  animation: blur 3s ease-in-out;
+
+}
+
+@keyframes blur {
+  from {
+    filter:blur(0px);
+  }
+  to{
+    filter:blur(2px)
+  }
+}
+
+
+.fog {
+  position: fixed;
+  height: 100%;
+  width: 400%;
+  z-index: 30;
+  
+}
+
+.one {
+  background: url("Fog/fog-1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 20s linear infinite;
+  z-index: 25
+}
+
+.two {
+  background: url("Fog/fog-2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 70s linear infinite;
+}
+
+.three {
+  background: url("Fog/fog-1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 90s linear infinite;
+  z-index: 25
+}
+
+.four {
+  background: url("Fog/fog-2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+
+/*Pour div Hidden de Jack*/
+
+.HiddenJackSecret{
+  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+  display: none;
+  z-index: 3;
+  overflow-y: scroll;
+
+}
+
+.transitionSecret{
+  animation: opacity 8.5s ease-in-out
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Specialclose-apo{
+  background-color: transparent;
+}
+
+.Specialhead-popupApoJack{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 15px;
+  
+}
+.CloseSecretJackHidden{
+  position: fixed;
+  font-size: 50px;
+  transform: rotate(180deg);
+  animation: Arrow-move 1s  infinite;
+  margin-top: 0px;
+  top: 0px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("JackHidden/FogText.gif");
+  background-position: center
+}
+
+@keyframes Arrow-move {
+  0% {
+    margin-left: 15px;
+
+  }
+
+  50% {
+    margin-left: 20px;
+  }
+
+  100% {
+    margin-left: 15px;
+  }
+}
+
+.Speciallogo-popup-JackHiddenApo{
+  margin-top: -15px;
+  font-family: Permanent Marker;
+  font-size: 65px;
+  letter-spacing: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("JackHidden/FogText.gif");
+  background-position: center;
+  filter: blur(0.10rem);
+  
+}
+
+.shadowJack{
+  
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 0px transparent, 0 0 0.5em rgb(0, 0, 0), 0 0 0.2em transparent;
+}
+
+.O{
+  letter-spacing: 25px;
+}
+
+.BloodDiv{
+  position: fixed;
+  filter: brightness(30%);
+  top: 0px;
+  right: -40px;
+  margin-top: -70px;
+}
+
+.JackBlood{
+  z-index: 99;
+
+}
+
+.BloodEdit{
+  position: fixed;
+  width: 120%;
+}
+
+  
+
+.SpecialdateApoJackHidden{
+  font-family: Permanent Marker;
+  margin-top: -30px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("JackHidden/FogText.gif");
+  background-position: bottom;
+  
+ 
+}
+
+.AllDivJackStory{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.JackStoryDiv{
+  
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 130px;
+    color: white;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow:  2px 5px 20px 8px  rgba(39, 38, 38, 0.507);
+    background-color: rgba(0, 0, 0, 0.11);
+    text-shadow: 0 0 10px rgba(105, 105, 102, 0.836);
+    animation: div 5s alternate-reverse ease-in-out infinite;
+  
+  }
+
+  .JackStory{
+    margin: 0px 10px 0px 10px;
+    font-family: Itim, cursive;
+    
+  }
+
+  .JackTitle{
+    font-family: Permanent Marker;
+    font-size: 20px;
+    color: rgb(20, 19, 19);
+  }
+  .JackTwo{
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  
+
+  .Right{
+    margin-right: auto;
+    margin-top: 200px;
+  }
+
+
+  .JackImage{
+    background-image: url("JackHidden/Jack.webp");
+    background-position: top;
+    background-size:cover;
+  
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-right: 50%;
+    height: 20vh;
+  }
+
+  .JackFate{
+    margin-right: auto;
+    height: 20vh;
+    background-image: url("JackHidden/JackIRL.jpg");
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
