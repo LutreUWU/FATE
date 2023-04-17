@@ -83,6 +83,8 @@
   
   box-shadow: 0px 0px 15px 5px rgba(146, 112, 19, 0.6); 
   min-width: 630px;
+
+  
   
 }
 
@@ -155,10 +157,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px;
-  padding-top: 50px;
+  border-radius: 8%;
+  
   padding-bottom: 30px;
+  
+  
 }
+
 
 
 .logo1,
