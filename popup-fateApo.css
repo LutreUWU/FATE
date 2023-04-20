@@ -319,39 +319,17 @@ align-items: center;
 
 .transitionApoBlack-pop{
   
-  animation: spawn-info-cardApoBlack 0.5s ease-in-out forwards;
+  animation: spawn-info-card 0.5s ease-in-out forwards;
   transition: animation 0.5s;
 }
 
-@keyframes spawn-info-cardApoBlack {
-  from {
-    top: 4050px;
-    opacity: 0;
-  }
-  to {
-    top: 4100px;
-    opacity: 1;
-  }
-}
 
 .transitionApoBlack-remove-pop{
-  animation: dispawn-info-cardApoBlack 0.5s ease-in-out forwards;
+  animation: dispawn-info-card 0.5s ease-in-out forwards;
   transition: animation 0.5s;
   
 }
 
-
-
-@keyframes dispawn-info-cardApoBlack {
-  from {
-    top: 4100px;
-    opacity: 1;
-  }
-  to {
-    top: 4050px;
-    opacity: 0;
-  }
-}
 
 
 
